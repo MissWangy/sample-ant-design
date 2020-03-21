@@ -1,0 +1,104 @@
+.imageShowCont {
+  display: inline-block;
+}
+
+.fileShowItem {
+  display: inline-block;
+  width: 104px;
+  height: 104px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 8px;
+  background: transparent;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.fileShowItemContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: table;
+}
+
+.fileUploadingCont {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fileShowItemContent:hover {
+  background-color: rgba(0, 0, 0, 0.377);
+}
+
+.imageShowWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.imageItemHandleCont {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: table;
+  opacity: 0;
+}
+
+.imageItemHandleCont:hover {
+  z-index: 2;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #FFFFFF;
+}
+
+.imageItemHandleWrap {
+  display: table-cell;
+  vertical-align: middle;
+
+  :global {
+    .ant-switch {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .ant-switch-checked {
+      background-color: #1890FF;
+    }
+  }
+}
+
+.imageHandleRow {
+  text-align: center;
+}
+
+.imageShowWrapImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.imageUpload {
+  width: min-content;
+}
+
+.imageHandleRowItem {
+  cursor: pointer;
+}
+
+.setMainText {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+}
+
+.prevImg {
+  width: 100%;
+}
