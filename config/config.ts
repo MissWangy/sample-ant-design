@@ -140,6 +140,12 @@ export default {
               component: './ListTableList',
             },
             {
+              name: '富文本编辑器',
+              icon: 'edit',
+              path: '/editor',
+              component: './Editor',
+            },
+            {
               component: './404',
             },
           ],
