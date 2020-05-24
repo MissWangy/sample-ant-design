@@ -134,7 +134,7 @@ export default {
               ],
             },
             {
-              name: 'list.table-list',
+              name: '查询表格',
               icon: 'table',
               path: '/list',
               component: './ListTableList',
@@ -144,6 +144,12 @@ export default {
               icon: 'edit',
               path: '/editor',
               component: './Editor',
+            },
+            {
+              name: '可视化工具',
+              icon: 'AreaChartOutlined',
+              path: '/echart',
+              component: './Echart',
             },
             {
               component: './404',
