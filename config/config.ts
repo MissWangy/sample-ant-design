@@ -146,10 +146,16 @@ export default {
               component: './Editor',
             },
             {
-              name: '可视化工具',
+              name: '可视化工具G2',
               icon: 'AreaChartOutlined',
               path: '/antv-g2',
               component: './Antv-G2',
+            },
+            {
+              name: '可视化工具Echarts',
+              icon: 'AreaChartOutlined',
+              path: '/echarts',
+              component: './Echarts',
             },
             {
               component: './404',

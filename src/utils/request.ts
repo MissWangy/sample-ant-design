@@ -45,10 +45,19 @@ const errorHandler = (error: { response: Response }): Response => {
   return response;
 };
 
+export let requestBaseUrl = '';
+if (process.env.NODE_ENV === 'development') {
+  requestBaseUrl = '/proxy';
+} else {
+  // 打包的时候会用的服务器地址
+  requestBaseUrl = '';
+}
+
 /**
  * 配置request请求时的默认参数
  */
 const request = extend({
+  prefix: requestBaseUrl,
   errorHandler, // 默认错误处理
   credentials: 'include', // 默认请求是否带上cookie
 });
