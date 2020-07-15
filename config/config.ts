@@ -148,8 +148,8 @@ export default {
             {
               name: '可视化工具',
               icon: 'AreaChartOutlined',
-              path: '/echart',
-              component: './Echart',
+              path: '/antv-g2',
+              component: './Antv-G2',
             },
             {
               component: './404',
