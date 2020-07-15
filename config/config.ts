@@ -158,6 +158,12 @@ export default {
               component: './Echarts',
             },
             {
+              name: '树形控件',
+              icon: 'table',
+              path: '/tree',
+              component: './TreeList',
+            },
+            {
               component: './404',
             },
           ],

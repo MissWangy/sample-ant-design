@@ -1,0 +1,153 @@
+.comWrap {
+  text-align: right;
+}
+
+.selectValueCont {
+  margin-bottom: 10px;
+}
+
+.selectValueItem {
+  display: inline-block;
+  padding: 2px 5px;
+  background-color: #F1F1F1;
+  margin: 3px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.selectValueItemClose {
+  cursor: pointer;
+  color: #999;
+  display: inline-block;
+}
+
+.selectValueItemClose:hover {
+  color: #333333;
+}
+
+.memberSelectBtn {
+  border-radius: 4px;
+}
+
+.memberSelectModal {
+  :global {
+    .ant-modal-body {
+      padding: 0;
+    }
+
+    /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    /*定义滚动条轨道 内阴影+圆角*/
+    ::-webkit-scrollbar-track {
+      border-radius: 8px;
+    }
+
+    /*定义滑块 内阴影+圆角*/
+    ::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    /*定义滑块 内阴影+圆角*/
+    ::-webkit-scrollbar-thumb:vertical {
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.16);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.modalContent {
+  width: 100%;
+  position: relative;
+
+  .modalLeftCont {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    background-color: #ffffff;
+    border-right: 2px solid #dddddd;
+
+    .modalLeftContent {
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+
+  .modalRightCont {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+
+    .modalRightContent {
+      height: 100%;
+      padding: 0 10px;
+      overflow-y: auto;
+    }
+  }
+
+  .contentHeader {
+    padding: 20px;
+    padding-bottom: 0;
+    background-color: #F0F2F5;
+  }
+
+  .leftTab {
+    :global {
+      .ant-tabs-nav-wrap {
+        padding: 10px;
+        padding-bottom: 0;
+        background-color: #F0F2F5;
+      }
+    }
+  }
+
+  .treeTabpane {
+    :global {
+      .filter-node .ant-tree-title {
+        color: #1890ff;
+      }
+    }
+  }
+
+  .treeTabpane {
+    height: 50vh;
+    overflow-y: auto;
+  }
+
+  .selectObjectListItem {
+    padding: 10px;
+  }
+
+  .selectObjectListItem:hover {
+    background-color: #F0F2F5;
+  }
+
+  .selectObjectListItemIcon {
+    margin-right: 10px;
+  }
+
+  .selectObjectListItemClose {
+    float: right;
+    line-height: 26px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.45);
+    display: none;
+  }
+
+  .selectObjectListItem:hover .selectObjectListItemClose {
+    display: inline-block;
+  }
+}
