@@ -133,12 +133,12 @@ export default {
                 },
               ],
             },
-            {
-              name: '查询表格',
-              icon: 'table',
-              path: '/list',
-              component: './ListTableList',
-            },
+            // {
+            //   name: '查询表格',
+            //   icon: 'table',
+            //   path: '/list',
+            //   component: './ListTableList',
+            // },
             {
               name: '富文本编辑器',
               icon: 'edit',
@@ -156,6 +156,12 @@ export default {
               icon: 'AreaChartOutlined',
               path: '/echarts',
               component: './Echarts',
+            },
+            {
+              name: '表单FromList',
+              icon: 'AreaChartOutlined',
+              path: '/fromlist',
+              component: './Form-List',
             },
             {
               name: '树形控件',
