@@ -164,6 +164,12 @@ export default {
               component: './Form-List',
             },
             {
+              name: '表单Fromily',
+              icon: 'AreaChartOutlined',
+              path: '/fromily',
+              component: './Formily',
+            },
+            {
               name: '树形控件',
               icon: 'table',
               path: '/tree',

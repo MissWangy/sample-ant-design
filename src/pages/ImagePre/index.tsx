@@ -4,6 +4,7 @@ import { Card } from 'antd';
 import Swiper from 'react-id-swiper';
 import styles from './index.less';
 import { CloseCircleFilled } from '@ant-design/icons';
+import { PageHeaderWrapper } from '@ant-design/pro-layout';
 
 const imageData = [
   {
@@ -99,47 +100,49 @@ const TreeList: React.FC<any> = () => {
   };
 
   return (
-    <Card title="图片">
-      <div className={styles.imageContent}>
-        <Swiper {...params} getSwiper={setSwiperView}>
-          {imageData &&
-            imageData.map((item: any) => {
-              return (
-                <div
-                  key={item.id}
-                  onClick={() => handlePreview(item)}
-                  className={styles.imageItem}
-                  style={{ backgroundImage: `url(${item.url})` }}
-                ></div>
-              );
-            })}
-        </Swiper>
-        <div style={{ height: 60 }}></div>
+    <PageHeaderWrapper>
+      <Card title="图片">
+        <div className={styles.imageContent}>
+          <Swiper {...params} getSwiper={setSwiperView}>
+            {imageData &&
+              imageData.map((item: any) => {
+                return (
+                  <div
+                    key={item.id}
+                    onClick={() => handlePreview(item)}
+                    className={styles.imageItem}
+                    style={{ backgroundImage: `url(${item.url})` }}
+                  ></div>
+                );
+              })}
+          </Swiper>
+          <div style={{ height: 60 }}></div>
 
-        {visible && (
-          <div className={styles.prebg}>
-            <CloseCircleFilled className={styles.close} onClick={handleClose} />
-            <div className={styles.preContent}>
-              <Swiper getSwiper={setTthumbsSwiper}>
-                {imageData &&
-                  imageData.map((item: any) => {
-                    return (
-                      <div
-                        key={item.id}
-                        onClick={() => handlePreview(item)}
-                        className={styles.thumbImage}
-                        style={{ backgroundImage: `url(${item.url})` }}
-                      ></div>
-                    );
-                  })}
-              </Swiper>
+          {visible && (
+            <div className={styles.prebg}>
+              <CloseCircleFilled className={styles.close} onClick={handleClose} />
+              <div className={styles.preContent}>
+                <Swiper getSwiper={setTthumbsSwiper}>
+                  {imageData &&
+                    imageData.map((item: any) => {
+                      return (
+                        <div
+                          key={item.id}
+                          onClick={() => handlePreview(item)}
+                          className={styles.thumbImage}
+                          style={{ backgroundImage: `url(${item.url})` }}
+                        ></div>
+                      );
+                    })}
+                </Swiper>
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {/*  */}
-      </div>
-    </Card>
+          {/*  */}
+        </div>
+      </Card>
+    </PageHeaderWrapper>
   );
 };
 
